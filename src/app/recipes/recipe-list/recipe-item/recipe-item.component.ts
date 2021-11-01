@@ -1,4 +1,5 @@
-import { Component, Input, OnInit, EventEmitter, Output } from '@angular/core';
+import { Component, Input, OnInit} from '@angular/core';
+import { RecipeService } from '../../recipe-service';
 
 import { Recipe } from '../../recipe.model';
 
@@ -9,18 +10,16 @@ import { Recipe } from '../../recipe.model';
 })
 export class RecipeItemComponent implements OnInit {
 
-  @Input()
-  recipe!: Recipe;
-  @Output() RecipeSelected = new EventEmitter<void>();
-
+  @Input() recipe!: Recipe;
   
-  constructor() { }
+  
+  constructor(private recipeService: RecipeService) { }
 
   ngOnInit(): void {
   }
 
   onSelected(){
-    this.RecipeSelected.emit();
+    this.recipeService.recipeSelected.emit(this.recipe);
   }
 
 }
