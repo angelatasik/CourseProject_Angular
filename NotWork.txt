@@ -2,3 +2,4 @@ STO NE FUNKCIONIRA:
 
 **Koga dodavam ingr go stava i odma se gubi!!
 **Ne mi se otvara dropdown menu
+**routerLinkActive

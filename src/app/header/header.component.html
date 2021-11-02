@@ -6,20 +6,20 @@
   
     <div class="collapse navbar-collapse" id="navbarSupportedContent" >
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link" href="#" (click)="onSelect('recipe')">Recipe<span class="sr-only"></span></a>
+        <li routerLinkActive="active">
+          <a class="nav-link" routerLink="/recipes">Recipe<span class="sr-only"></span></a>
         </li>
-        <li class="nav-item active">
-          <a class="nav-link" href="#" (click)="onSelect('shopping-list')">Shopping List<span class="sr-only"></span></a>
+        <li routerLinkActive="active">
+          <a class="nav-link" routerLink="/shopping-list">Shopping List<span class="sr-only"></span></a>
         </li>
         <div clas = "btn-group" >
           <li class="nav-item dropdown" appDropdown>  
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+            <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="cursor: pointer;">
                 Manage
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Save Data</a>
-              <a class="dropdown-item" href="#">Fetch Data</a>            
+              <a class="dropdown-item" style="cursor: pointer;" >Save Data</a>
+              <a class="dropdown-item" style="cursor: pointer;">Fetch Data</a>            
             </div>
           </li>
         </div>
