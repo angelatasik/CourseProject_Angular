@@ -17,6 +17,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component';
+import { RecipeService } from './recipes/recipe-service';
 
 
 @NgModule({
@@ -39,7 +40,9 @@ import { RecipeEditComponent } from './recipes/recipe-edit/recipe-edit.component
     AppRoutingModule,
     ReactiveFormsModule
   ],
-  providers: [ShoppingListService],
+  providers: [ShoppingListService, RecipeService],
+  //we now are sure that we have one instance of the service always avilable when the app is running!
+  //sega koga ke dodademe nova recepta nema da se izgubi
   bootstrap: [AppComponent]
 })
 export class AppModule { }
