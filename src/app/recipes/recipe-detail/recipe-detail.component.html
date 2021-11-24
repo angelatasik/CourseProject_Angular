@@ -13,15 +13,26 @@
 <div class="row">
     <div class="col-xs-12">
         <div class="btn-group" >
-            <button type="button" class="btn btn-primary dropdown-toggle"  >
+
+            <button 
+                type="button" 
+                class="btn btn-primary"
+                (click)="onAddToShoppingList()" style="cursor: pointer;">To Shopping List</button>
+                <button 
+                type="button" 
+                class="btn btn-primary"style="cursor: pointer;" (click)="EditRecipeClicked()">Edit Recipe</button>
+                <button 
+                type="button" 
+                class="btn btn-primary"style="cursor: pointer;" (click)="onDeleteRecipe()">Delete Recipe</button>
+            <!-- <button type="button" class="btn btn-primary dropdown-toggle"  >
                 Manage Recipe
                 <span class="caret"></span>
-            </button>
-            <ul class="dropdown-menu">
+            </button> -->
+            <!-- <ul class="dropdown-menu">
                 <li><a (click)="onAddToShoppingList()" style="cursor: pointer;" >To Shopping List</a></li>
                 <li style="cursor: pointer;" (click) = "EditRecipeClicked()" ><a>Edit Recipe</a></li>
                 <li style="cursor: pointer;" (click)="onDeleteRecipe()" ><a>Delete Recipe</a></li>
-            </ul>
+            </ul> -->
         </div>
     </div>
 </div>
